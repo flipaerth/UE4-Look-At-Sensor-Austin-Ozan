@@ -1,0 +1,3 @@
+D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\Definitions.LookAtSensorAO.h
+D:\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

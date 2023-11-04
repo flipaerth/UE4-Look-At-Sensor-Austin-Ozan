@@ -1,0 +1,21 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-LookAtSensorAO.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\LookAtSensorAOEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAO.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOCharacter.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOGameMode.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOHUD.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOProjectile.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAO.init.gen.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOCharacter.gen.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOGameMode.gen.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOHUD.gen.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\LookAtSensorAOProjectile.gen.cpp.obj"
+"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\Default.rc2.res"
+/OUT:"D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorAO\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorAO\UE4Editor-LookAtSensorAO.lib"
