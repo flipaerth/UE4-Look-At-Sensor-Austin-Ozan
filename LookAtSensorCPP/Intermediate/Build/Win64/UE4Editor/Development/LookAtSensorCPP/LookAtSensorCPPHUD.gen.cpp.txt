@@ -1,0 +1,10 @@
+D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorCPP\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorCPP\Definitions.LookAtSensorCPP.h
+D:\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorCPP\Source\LookAtSensorCPP/LookAtSensorCPPHUD.h
+D:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+D:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+D:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+D:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+D:\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorCPP\Intermediate\Build\Win64\UE4Editor\Inc\LookAtSensorCPP\LookAtSensorCPPHUD.generated.h

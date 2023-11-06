@@ -1,0 +1,2 @@
+D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorCPP\Intermediate\Build\Win64\UE4Editor\Development\LookAtSensorCPP\Definitions.LookAtSensorCPP.h
+D:\Unreal Projects\UE4 Look-At Sensor\UE4-Look-At-Sensor-Austin-Ozan\LookAtSensorCPP\Source\LookAtSensorCPP\LookAtSensorCPP.h

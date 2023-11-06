@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Unreal Projects\\UE4 Look-At Sensor\\UE4-Look-At-Sensor-Austin-Ozan\\LookAtSensorCPP\\Source\\LookAtSensorCPP\\LookAtSensorCPP.Build.cs",
+		"D:\\Unreal Projects\\UE4 Look-At Sensor\\UE4-Look-At-Sensor-Austin-Ozan\\LookAtSensorCPP\\Source\\LookAtSensorCPP.Target.cs",
+		"D:\\Unreal Projects\\UE4 Look-At Sensor\\UE4-Look-At-Sensor-Austin-Ozan\\LookAtSensorCPP\\Source\\LookAtSensorCPPEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

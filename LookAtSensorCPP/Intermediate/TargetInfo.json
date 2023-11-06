@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "LookAtSensorCPP",
+			"Path": "D:\\Unreal Projects\\UE4 Look-At Sensor\\UE4-Look-At-Sensor-Austin-Ozan\\LookAtSensorCPP\\Source\\LookAtSensorCPP.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "LookAtSensorCPPEditor",
+			"Path": "D:\\Unreal Projects\\UE4 Look-At Sensor\\UE4-Look-At-Sensor-Austin-Ozan\\LookAtSensorCPP\\Source\\LookAtSensorCPPEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
