@@ -79,6 +79,10 @@ void EmptyLinkFunctionForGeneratedCodeLookAtSensorCPPCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_sensor;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_threshold_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_threshold;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_lineDistance_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_lineDistance;
@@ -221,6 +225,19 @@ void EmptyLinkFunctionForGeneratedCodeLookAtSensorCPPCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_sensor = { "sensor", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALookAtSensorCPPCharacter, sensor), Z_Construct_UClass_ASensor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_sensor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_sensor_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_threshold_MetaData[] = {
+		{ "Category", "LookAtSensorCPPCharacter" },
+		{ "ClampMax", "1.0" },
+		{ "ClampMin", "0.0" },
+		{ "Comment", "// 1 is looking directly at the sensor, 0 is looking away from the sensor\n" },
+		{ "ModuleRelativePath", "LookAtSensorCPPCharacter.h" },
+		{ "ToolTip", "1 is looking directly at the sensor, 0 is looking away from the sensor" },
+		{ "UIMax", "1.0" },
+		{ "UIMin", "0.0" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_threshold = { "threshold", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ALookAtSensorCPPCharacter, threshold), METADATA_PARAMS(Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_threshold_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_threshold_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_lineDistance_MetaData[] = {
 		{ "Category", "LookAtSensorCPPCharacter" },
 		{ "ModuleRelativePath", "LookAtSensorCPPCharacter.h" },
@@ -311,6 +328,7 @@ void EmptyLinkFunctionForGeneratedCodeLookAtSensorCPPCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_R_MotionController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_L_MotionController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_sensor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_threshold,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_lineDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_lineColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALookAtSensorCPPCharacter_Statics::NewProp_BaseTurnRate,
@@ -348,7 +366,7 @@ void EmptyLinkFunctionForGeneratedCodeLookAtSensorCPPCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALookAtSensorCPPCharacter, 2520601766);
+	IMPLEMENT_CLASS(ALookAtSensorCPPCharacter, 153024647);
 	template<> LOOKATSENSORCPP_API UClass* StaticClass<ALookAtSensorCPPCharacter>()
 	{
 		return ALookAtSensorCPPCharacter::StaticClass();

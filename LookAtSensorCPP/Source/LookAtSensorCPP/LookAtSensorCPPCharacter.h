@@ -65,6 +65,10 @@ protected:
 
 public:
 
+	// 1 is looking directly at the sensor, 0 is looking away from the sensor
+	UPROPERTY(EditAnywhere, meta = (ClampMin = "0.0", ClampMax = "1.0", UIMin = "0.0", UIMax = "1.0"))
+	float threshold = 0.5f;
+
 	UPROPERTY(EditAnywhere)
 	float lineDistance = 100.0f;
 
@@ -108,6 +112,8 @@ protected:
 	FVector GetSensorLocation();
 
 	FVector GetSensorForward();
+
+	void SensorCheck();
 	
 	/** Fires a projectile. */
 	void OnFire();

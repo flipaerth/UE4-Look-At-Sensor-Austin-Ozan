@@ -12,10 +12,6 @@ class LOOKATSENSORCPP_API ASensor : public AActor
 	GENERATED_BODY()
 	
 public:	
-
-	UPROPERTY(EditAnywhere)
-	float Threshold = 1;
-
 	// Sets default values for this actor's properties
 	ASensor();
 

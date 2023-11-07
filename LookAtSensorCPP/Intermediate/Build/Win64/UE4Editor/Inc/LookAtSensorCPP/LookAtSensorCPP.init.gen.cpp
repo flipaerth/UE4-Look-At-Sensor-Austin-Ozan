@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeLookAtSensorCPP_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x8F124568,
+				0xA9CD58A2,
 				0x759D8FEE,
 				METADATA_PARAMS(nullptr, 0)
 			};

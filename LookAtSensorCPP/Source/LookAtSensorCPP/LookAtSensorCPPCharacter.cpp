@@ -12,6 +12,8 @@
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "DrawDebugHelpers.h"
+#include "Sensor.h"
+#include "Math/Vector.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -26,6 +28,9 @@ ALookAtSensorCPPCharacter::ALookAtSensorCPPCharacter()
 	// set our turn rates for input
 	BaseTurnRate = 45.f;
 	BaseLookUpRate = 45.f;
+
+	// Initialize threshold to your desired value
+	threshold = 0.5f;
 
 	// Create a CameraComponent	
 	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
@@ -94,10 +99,28 @@ void ALookAtSensorCPPCharacter::Tick(float DeltaTime) {
 	// Get the sensor's location
 	FVector end = GetSensorLocation();
 
-	DrawDebugLine(GetWorld(), start, end, FColor::Cyan, false, 0.1f);
+	// Calculate the direction vector from player to sensor
+	FVector PlayerToSensorDir = (end - start).GetSafeNormal();
 
+	// Draw Debug Line from the player to the sensor
+	//DrawDebugLine(GetWorld(), start, start + PlayerToSensorDir * lineDistance, FColor::Cyan, false, 0.1f);
+
+	// Draw Debug Line from player to the player's forward vector
 	FVector playerForward = GetForward();
 	DrawDebugLine(GetWorld(), start, start + playerForward * lineDistance, lineColor, false, 0.1f);
+
+	float lookness = FVector::DotProduct(PlayerToSensorDir, playerForward);
+
+	bool isLooking = lookness >= threshold;
+
+	if (isLooking == true) {
+		// Draw Debug Line from the player to the sensor
+		DrawDebugLine(GetWorld(), start, start + PlayerToSensorDir * lineDistance, FColor::Green, false, 0.1f);
+	}
+	else {
+		// Draw Debug Line from the player to the sensor
+		DrawDebugLine(GetWorld(), start, start + PlayerToSensorDir * lineDistance, FColor::Red, false, 0.1f);
+	}
 
 	// Debug Text
 	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Cyan, "Hello World");

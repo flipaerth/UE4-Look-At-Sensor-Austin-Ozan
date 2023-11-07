@@ -67,7 +67,6 @@ public: \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(ALookAtSensorCPPCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__R_MotionController() { return STRUCT_OFFSET(ALookAtSensorCPPCharacter, R_MotionController); } \
 	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(ALookAtSensorCPPCharacter, L_MotionController); } \
-	FORCEINLINE static uint32 __PPO__threshold() { return STRUCT_OFFSET(ALookAtSensorCPPCharacter, threshold); } \
 	FORCEINLINE static uint32 __PPO__sensor() { return STRUCT_OFFSET(ALookAtSensorCPPCharacter, sensor); }
 
 
