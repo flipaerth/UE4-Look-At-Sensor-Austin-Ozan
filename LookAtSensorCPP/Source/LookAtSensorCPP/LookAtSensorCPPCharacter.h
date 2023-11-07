@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Sensor.h"
 #include "LookAtSensorCPPCharacter.generated.h"
 
 class UInputComponent;
@@ -51,13 +52,25 @@ class ALookAtSensorCPPCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UMotionControllerComponent* L_MotionController;
 
+	UPROPERTY(EditAnywhere)
+	ASensor* sensor;
+
 public:
 	ALookAtSensorCPPCharacter();
+
+	void Tick(float DeltaTime);
 
 protected:
 	virtual void BeginPlay();
 
 public:
+
+	UPROPERTY(EditAnywhere)
+	float lineDistance = 100.0f;
+
+	UPROPERTY(EditAnywhere)
+	FColor lineColor;
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -87,6 +100,14 @@ public:
 	uint8 bUsingMotionControllers : 1;
 
 protected:
+
+	FVector GetLocation();
+
+	FVector GetForward();
+
+	FVector GetSensorLocation();
+
+	FVector GetSensorForward();
 	
 	/** Fires a projectile. */
 	void OnFire();

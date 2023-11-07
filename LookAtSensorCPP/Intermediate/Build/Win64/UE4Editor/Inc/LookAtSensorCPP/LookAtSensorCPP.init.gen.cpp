@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeLookAtSensorCPP_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF2FA6EF7,
-				0x6905D5FB,
+				0x8F124568,
+				0x759D8FEE,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

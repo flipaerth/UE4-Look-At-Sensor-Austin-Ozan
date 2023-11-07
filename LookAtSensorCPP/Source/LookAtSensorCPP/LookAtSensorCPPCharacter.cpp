@@ -11,6 +11,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
+#include "DrawDebugHelpers.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -82,6 +83,24 @@ ALookAtSensorCPPCharacter::ALookAtSensorCPPCharacter()
 
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
+}
+
+void ALookAtSensorCPPCharacter::Tick(float DeltaTime) {
+
+	Super::Tick(DeltaTime);
+
+	// Get the player location
+	FVector start = GetLocation();
+	// Get the sensor's location
+	FVector end = GetSensorLocation();
+
+	DrawDebugLine(GetWorld(), start, end, FColor::Cyan, false, 0.1f);
+
+	FVector playerForward = GetForward();
+	DrawDebugLine(GetWorld(), start, start + playerForward * lineDistance, lineColor, false, 0.1f);
+
+	// Debug Text
+	//GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Cyan, "Hello World");
 }
 
 void ALookAtSensorCPPCharacter::BeginPlay()
@@ -253,6 +272,30 @@ void ALookAtSensorCPPCharacter::EndTouch(const ETouchIndex::Type FingerIndex, co
 //		}
 //	}
 //}
+
+FVector ALookAtSensorCPPCharacter::GetLocation() {
+	// Funciton to get the player's location
+	//return GetActorLocation();
+
+	return FirstPersonCameraComponent->GetComponentLocation();
+}
+
+FVector ALookAtSensorCPPCharacter::GetForward() {
+	// Funciton to get the player's forward vector
+	//return GetActorForwardVector();
+
+	return FirstPersonCameraComponent->GetForwardVector();
+}
+
+FVector ALookAtSensorCPPCharacter::GetSensorLocation() {
+	// Funciton to get the sensor's location
+	return sensor->GetActorLocation();
+}
+
+FVector ALookAtSensorCPPCharacter::GetSensorForward() {
+	// Funciton to get the sensor's forward vector
+	return sensor->GetActorForwardVector();
+}
 
 void ALookAtSensorCPPCharacter::MoveForward(float Value)
 {
